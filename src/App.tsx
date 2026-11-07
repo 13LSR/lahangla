@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import type { ChangeEvent, DragEvent } from 'react'
+import SiteStats from './SiteStats'
 import {
   ArrowDownToLine, ArrowLeft, Check, ChevronDown,
   Grip, ImagePlus, Plus, Settings2, ShieldCheck, Trash2, X,
@@ -265,6 +266,7 @@ function App() {
         </div>
       </section>
       <div className="footer-line"><span>FROM LOCAL FILES</span><b>│</b><span>PNG EXPORT</span><b>│</b><span>GITHUB PAGES READY</span><span className="footer-ok"><Check size={14} /> READY</span></div>
+      <SiteStats />
       <canvas ref={exportCanvas} className="export-canvas" aria-hidden="true" />
     </main>
   )
